@@ -38,11 +38,20 @@ p {
   text-align: center;
 }
 
-#home, #projects {
+#home {
+  background-color: #000000; 
+}
+#projects {
   background-color: #000000; 
 }
 
-#about, #contact, #tasks {
+#about {
+  background-color: #1a1a1a; 
+}
+#contact {
+  background-color: #1a1a1a; 
+}
+#tasks {
   background-color: #1a1a1a; 
 }
 

@@ -1,64 +1,62 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
-  }
-  
-  body {
-    color: #000000;
-  }
-  
-  .section {
-    padding: 40px 20px;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  #home {
-    background-color: #333;
-    color: #fff;
-  }
-  
-  #about {
-    background-color: #f4f4f4;
-  }
-  
-  #portfolio {
-    background-color: #e0e0e0;
-  }
-  
-  #contact {
-    background-color: #ddd;
-  }
-  
-  #footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-  }
-  
-  h1, h2 {
-    margin-bottom: 15px;
-  }
-  
-  p {
-    max-width: 600px;
-  }
-  
-  .gallery {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .gallery img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    border-radius: 5px;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  color: #ffffff; 
+  background-color: #000000; 
+  font-size: 18px; 
+}
+
+h1 {
+  font-size: 36px; 
+  color: #3E065F; 
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 30px; 
+  color: #3E065F;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 20px;
+  color: #ffffff; 
+  max-width: 600px;
+}
+
+
+.section {
+  padding: 40px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #000000; 
+}
+
+#home, #projects {
+  background-color: #000000; 
+}
+
+#about, #contact, #tasks {
+  background-color: #1a1a1a; 
+}
+
+.gallery {
+  display: flex;
+  gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 5px;
+}

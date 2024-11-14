@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="slider.css">
+    
+</head>
+<body>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/slider/1.jpg" alt="Picture 1"></div>
+            <div class="swiper-slide"><img src="img/slider/2.jpg" alt="Picture 2"></div>
+            <div class="swiper-slide"><img src="img/slider/3.jpg" alt="Picture 3"></div>
+            <div class="swiper-slide"><img src="img/slider/4.jpg" alt="Picture 4"></div>
+            <div class="swiper-slide"><img src="img/slider/5.jpg" alt="Picture 5"></div>
+            <div class="swiper-slide"><img src="img/slider/6.jpg" alt="Picture 6"></div>
+            <div class="swiper-slide"><img src="img/slider/7.jpg" alt="Picture 7"></div>
+            <div class="swiper-slide"><img src="img/slider/8.jpg" alt="Picture 8"></div>
+            <div class="swiper-slide"><img src="img/slider/9.jpg" alt="Picture 9"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+</html>

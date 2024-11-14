@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="myForm" action="/submit" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <img id="nameValidation" class="validation-icon" src="neutral.png" alt="validation"><br><br>
+            
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" name="surname" required>
+            <img id="surnameValidation" class="validation-icon" src="neutral.png" alt="validation"><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <img id="emailValidation" class="validation-icon" src="neutral.png" alt="validation"><br><br>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <img id="phoneValidation" class="validation-icon" src="neutral.png" alt="validation"><br><br>
+            
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+            <img id="addressValidation" class="validation-icon" src="neutral.png" alt="validation"><br><br>
+            
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+            <img id="cityValidation" class="validation-icon" src="neutral.png" alt="validation"><br><br>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <img id="messageValidation" class="validation-icon" src="neutral.png" alt="validation"><br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

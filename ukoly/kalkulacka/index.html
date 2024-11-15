@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulačka</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        input[type="text"], select {
+            width: 100px;
+            height: 30px;
+            font-size: 20px;
+            margin: 5px;
+        }
+        #result {
+            width: 220px;
+            height: 40px;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        button {
+            width: 100px;
+            height: 40px;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div style="display: flex; align-items: center; justify-content: center; height: 100vh;">
+        <h2>Kalkulačka</h2>
+        <input type="text" id="num1" placeholder="Číslo 1">
+        <select id="operation">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="text" id="num2" placeholder="Číslo 2">
+        <button onclick="calculateResult()">Spočítat</button>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

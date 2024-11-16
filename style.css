@@ -129,6 +129,7 @@ p {
   }
   .section {
     padding: 10px;
+    width: 90%;
   }
 
   .section p {

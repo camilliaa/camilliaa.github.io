@@ -19,3 +19,9 @@ window.onload = function() {
         document.getElementById('theme-style').setAttribute('href', 'styles/light.css');
     }
 };
+
+const switchButton = document.querySelector('.switch');
+
+switchButton.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+});

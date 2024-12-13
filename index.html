@@ -5,27 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jan Štork</title>
     <link rel="stylesheet" href="styles/mainStyle.css">
+    <link id="theme-style" rel="stylesheet" href="styles/dark.css">
 </head>
 <body>
-<script>
-    const arrBG = [
-      'src/img/bg/1.jpg',
-      'src/img/bg/2.jpg',
-      'src/img/bg/3.jpg',
-      'src/img/bg/4.jpg',
-      'src/img/bg/5.jpg',
-      'src/img/bg/1.gif',
-      'src/img/bg/2.gif'
-    ];
+  <script src="scripts/themeToggle.js"></script>
+  <script>
+    themeToggle();
 
-    const bg = arrBG[Math.floor(Math.random() * arrBG.length)];
-
-    const imgElement = document.createElement('img');
-    imgElement.src = bg;
-    imgElement.className = 'bg';
-
-    document.body.appendChild(imgElement);
+    document.getElementById('theme-toggle').addEventListener('click', themeToggle);
   </script>
+  <script src="scripts/background.js"></script>
+
 
 <div class="menu-toggle" id="menu-toggle">
   <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -34,6 +24,38 @@
     <path d="M5 17L19 17" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
   </svg>
 </div>
+
+<label id="theme-button" class="theme-button">
+  <input type="checkbox" checked>
+  <div class="planet">
+  </div>
+  <div class="elements">
+    <svg version="1.1" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="250" cy="250" r="200" />
+    </svg>
+    <svg version="1.1" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="250" cy="250" r="200" />
+    </svg>
+    <svg version="1.1" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="250" cy="250" r="200" />
+    </svg>
+    <svg version="1.1" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="250" cy="250" r="200" />
+    </svg>
+    <svg version="1.1" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="250" cy="250" r="200" />
+    </svg>
+    <svg version="1.1" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="250" cy="250" r="200" />
+    </svg>
+    <svg version="1.1" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="250" cy="250" r="200" />
+    </svg>
+    <svg version="1.1" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="250" cy="250" r="200" />
+    </svg>
+  </div>
+</label>
 
 <nav id="menu" class="menu">
   <ul>
@@ -77,7 +99,8 @@
   
     <section class="section" id="contact">
       <h2>Kontakt</h2>
-      <p id="email" style="cursor: pointer;">email: <a>jan.stork@protonmail.com</a></p>
+      <script src="scripts/emailCopy.js"></script>
+      <p id="email" style="cursor: pointer;" onclick="copyEmail()">email: <a>jan.stork@protonmail.com</a></p>
       <p>github: <a href="https://github.com/camilliaa">camilliaa</a></p>
       <p>instagram: <a href="https://www.instagram.com/stacizachovatklidnouhlavu/">stacizachovatklidnouhlavu</a></p>
     </section>
@@ -88,24 +111,5 @@
       <p><a href="ukoly/slider/slider.html">Slider</a></p>
       <p><a href="http://storkukoly.8u.cz/formular/">Formulář 1</a></p>
     </section>
-
-
-<script>
-  const emailElement = document.getElementById('email');
-  
-  emailElement.addEventListener('click', () => {
-    const textToCopy = emailElement.textContent;
-    navigator.clipboard.writeText(textToCopy)
-      .then(() => {
-        emailElement.style.color = '#e0afff';
-        setTimeout(() => {
-          emailElement.style.color = '';
-        }, 250);
-      })
-      .catch(err => {
-        console.error('Chyba při kopírování: ', err);
-      });
-  });
-</script>
 </body>
 </html>

@@ -1,29 +1,4 @@
-:root {
-    --bg-planet-bright: #F2C94C;
-    --bg-planet-shadow: #828894;
-    --bg-planet-lightshadow: #D7D7D820;
-    --dot-size: 0.25rem;
-  }
-  
-  .bg-dark {
-    --bg-color: #2C3144;
-  }
-  
-  * {
-    box-sizing: inherit;
-  }
-  
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
-  
-  html {
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-  }
-  
-  body {
+body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -35,7 +10,6 @@
     cursor: pointer;
     padding: 1rem;
     position: relative;
-    /* To make outline on mobile invisible */
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   }
   
@@ -52,19 +26,18 @@
     border-radius: 50%;
     overflow: hidden;
     background: radial-gradient(3.75em, 99%, transparent 100%);
-    background-color: var(--bg-planet-bright);
+    background-color: #F2C94C;
     background-repeat: no-repeat;
     position: relative;
     will-change: background;
     transition: all 400ms ease;
-    /* Safari transition issue */
     backface-visibility: hidden;
     transform: translate3d(0, 0, 0);
   }
   
   .planet::after {
     content: "";
-    background-color: var(--bg-planet-shadow);
+    background-color: #828894;
     width: 2rem;
     height: 2rem;
     position: absolute;
@@ -93,7 +66,7 @@
   }
   
   .elements svg circle {
-    fill: var(--bg-planet-bright);
+    fill: #F2C94C;
     transition: fill 400ms ease;
   }
   
@@ -129,12 +102,8 @@
     transform: translate(0.7em, 0.7em);
   }
   
-  .bg-dark body {
-    background-color: var(--bg-color);
-  }
-  
   input:checked + .planet {
-    --bg-planet-bright: #D7D7D8;
+    background-color: #D7D7D8;
   }
   
   input:checked + .planet::after {
@@ -173,7 +142,7 @@
   }
   
   input:checked ~ .elements svg:nth-child(5) circle {
-    fill: var(--bg-planet-lightshadow);
+    fill: #D7D7D820;
   }
   
   input:checked ~ .elements svg:nth-child(6) {
@@ -183,7 +152,7 @@
   }
   
   input:checked ~ .elements svg:nth-child(6) circle {
-    fill: var(--bg-planet-lightshadow);
+    fill: #D7D7D820;
   }
   
   input:checked ~ .elements svg:nth-child(7) {
@@ -193,7 +162,7 @@
   }
   
   input:checked ~ .elements svg:nth-child(7) circle {
-    fill: var(--bg-planet-lightshadow);
+    fill: #D7D7D820;
   }
   
   input:checked ~ .elements svg:nth-child(8) {
@@ -203,6 +172,10 @@
   }
   
   input:checked ~ .elements svg:nth-child(8) circle {
-    fill: var(--bg-planet-lightshadow);
+    fill: #D7D7D820;
+  }
+  
+  .bg-dark body {
+    background-color: #2C3144;
   }
   

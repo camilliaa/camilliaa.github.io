@@ -1,0 +1,28 @@
+h1 {
+color: #000; 
+}
+
+h2 {
+color: #000;
+}
+
+a {
+color: #df51ff;
+}
+
+p {
+color: #000; 
+}
+
+.section {
+background-color: rgba(255, 255, 255, 0.8);
+border: 3px solid rgba(235, 235, 235, 0.85);
+}
+
+.menu {
+background-color: #ccc;
+}
+
+.menu ul li a {
+color: #000;
+}
